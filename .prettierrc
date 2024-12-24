@@ -19,5 +19,14 @@
 	"useTabs": false,
 	"embeddedLanguageFormatting": "auto",
 	"vueIndentScriptAndStyle": false,
-	"parser": "babel"
+	"parser": "babel",
+	"plugins": ["prettier-plugin-svelte"],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		}
+	]
 }
